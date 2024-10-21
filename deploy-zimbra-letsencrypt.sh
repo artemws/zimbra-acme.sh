@@ -63,4 +63,4 @@ cd $certs
 su - zimbra -c "/opt/zimbra/bin/zmcertmgr deploycrt comm /opt/certs/$domain/$domain.cer /opt/certs/$domain/fullchain.cer"
 
 # Step 5 - Restart zimbra proxy
-su - zimbra -c "zmproxyctl restart"
+su - zimbra -c "zmcontrol restart"
